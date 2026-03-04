@@ -10,6 +10,6 @@ class Reshape(Layer):
         return np.reshape(input, self.output_shape)
     
     def backward(self, output_grad, lr):
-        return np.reshape(output_grad, self.output_shape)
+        return np.reshape(output_grad, self.input_shape)
     
         
